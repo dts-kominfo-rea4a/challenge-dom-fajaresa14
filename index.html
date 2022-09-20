@@ -5,9 +5,46 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Challenge - DOM</title>
+
+    <style>
+      body {
+        background-color: #6495ED;
+        padding: 20px;
+      }
+      #app {
+        background-color: antiquewhite;
+        border-radius: 10px;
+        padding: 20px;
+        top: 100%;
+        left: 70%;
+        width: 340px;
+        height: 330px;
+        margin-left: 700px;
+      }
+      #todo-title {
+        background-color: rgb(179, 233, 190);
+        text-align: center;
+      }
+      #todo-subtitle {
+        text-align: center;
+      }
+      #todo-input {
+        width: 80%;
+        padding: 5px 10px;
+        margin: -1px 0;
+        box-sizing: border-box;
+      }
+      #todo-submit {
+        width: 18%;
+        padding: 5px 10px;
+        margin: -1px 0;
+        box-sizing: border-box;
+      }
+    </style>
+
   </head>
   <body> 
-    <center>
+
     <div id="app">
       <!-- TODO: Buatlah sebuah header dengan id todo-title -->
       <h2 id="todo-title">To Do List</h2>
@@ -15,11 +52,10 @@
       <h4 id="todo-subtitle">- To Day I need To -</h4>
       <!-- Section: input -->
       <!-- TODO: Buatlah sebuah input bertipe text dengan id todo-input -->
-      <input type="text" id="todo-input" placeholder="Title.....">
+      <input type="text" id="todo-input" placeholder="Masukkan disini ...">
       <!-- TODO: Buatlah sebuah button dengan id todo-submit -->
       <button id="todo-submit"><span onclick="newElement()">Submit</span></button>
-    </div>
-    </center>
+
       <!-- Section output -->
       <!-- TODO: Buatlah sebuah <ul> dengan id todo-output -->
         <ul id="todo-Output">
@@ -82,6 +118,6 @@
         }
       }
     </script>
-
+    </div>
   </body>
 </html>
